@@ -62,6 +62,18 @@ public class LinkedTree<E> implements NAryTree<E> {
     }
 
 
+    /** Check if a given position is valid and return the corresponding TreeNode.
+     *
+     * @param p The position to check
+     * @return The corresponding TreeNode
+     * @throws RuntimeException If the position is invalid
+     */
+    private TreeNode<E> checkPosition(Position<E> p) {
+        if (!(p instanceof TreeNode)) {
+            throw new RuntimeException("The position is invalid");
+        }
+        return (TreeNode<E>) p;
+    }
     @Override
     public Position<E> add(E element, Position<E> p) {
         throw new UnsupportedOperationException("Not supported yet.");
