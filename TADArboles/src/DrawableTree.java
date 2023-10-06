@@ -62,7 +62,7 @@ public abstract class DrawableTree<E> implements NAryTree<E> {
     }
 
 
-    /**
+        /**
      * Generate an image using the dot generate by the saveDotToFile method.
      */
 
